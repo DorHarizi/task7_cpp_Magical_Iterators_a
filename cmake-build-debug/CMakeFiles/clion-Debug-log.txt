@@ -1,1 +1,0 @@
-CMakeLists.txt not found in /home/dor/Desktop/CPP/task7_cpp_Magical_Iterators_a Select CMakeLists.txt
