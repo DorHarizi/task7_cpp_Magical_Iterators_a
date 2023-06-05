@@ -78,7 +78,7 @@ int MagicalContainer::AscendingIterator::operator*()const
 {
     if(this->current == this->magical_container.container.end())
     {
-        throw out_of_range("OutOfRange in MagicalContainer *()");
+        throw runtime_error("OutOfRange in MagicalContainer *()");
     }
     return this->magical_container.container[size_t(this->currentIndex)];
 }

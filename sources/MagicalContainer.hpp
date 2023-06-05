@@ -18,6 +18,8 @@ namespace ariel{
     public:
         MagicalContainer();
         ~MagicalContainer();
+//        MagicalContainer(const MagicalContainer& other) = default;
+//        MagicalContainer& operator=(const MagicalContainer& other) {return *this;}
         static bool isPrime(int number);
         void addElement(int element);
         void removeElement(int element);
@@ -33,8 +35,8 @@ namespace ariel{
             explicit AscendingIterator(MagicalContainer& magical_container);
             ~AscendingIterator();
 //            AscendingIterator &operator=(const AscendingIterator &other);                      // Copy assignment operator
-            AscendingIterator(AscendingIterator &&other) noexcept = default;                   // Move constructor
-            AscendingIterator &operator=(AscendingIterator &&other) noexcept { return *this; } // Move assignment operator
+//            AscendingIterator(AscendingIterator &&other) noexcept = default;                   // Move constructor
+//            AscendingIterator &operator=(AscendingIterator &&other) noexcept { return *this; } // Move assignment operator
             AscendingIterator& begin();
             AscendingIterator& end();
             AscendingIterator& operator=(const AscendingIterator& other);
@@ -59,8 +61,8 @@ namespace ariel{
             explicit SideCrossIterator(MagicalContainer& magical_container);
             ~SideCrossIterator();
 //            SideCrossIterator &operator=(const SideCrossIterator &other);                      // Copy assignment operator
-            SideCrossIterator(SideCrossIterator &&other) noexcept = default;                   // Move constructor
-            SideCrossIterator &operator=(SideCrossIterator &&other) noexcept { return *this; } // Move assignment operator
+//            SideCrossIterator(SideCrossIterator &&other) noexcept = default;                   // Move constructor
+//            SideCrossIterator &operator=(SideCrossIterator &&other) noexcept { return *this; } // Move assignment operator
             SideCrossIterator& begin();
             SideCrossIterator& end();
             SideCrossIterator& operator=(const SideCrossIterator& other);
@@ -82,8 +84,8 @@ namespace ariel{
             explicit PrimeIterator(MagicalContainer& magical_container);
             ~PrimeIterator();
 //            PrimeIterator &operator=(const PrimeIterator &other);                      // Copy assignment operator
-            PrimeIterator(PrimeIterator &&other) noexcept = default;                   // Move constructor
-            PrimeIterator &operator=(PrimeIterator &&other) noexcept { return *this; } // Move assignment operator
+//            PrimeIterator(PrimeIterator &&other) noexcept = default;                   // Move constructor
+//            PrimeIterator &operator=(PrimeIterator &&other) noexcept { return *this; } // Move assignment operator
             PrimeIterator& begin();
             PrimeIterator& end();
             PrimeIterator& operator=(const PrimeIterator& other);
